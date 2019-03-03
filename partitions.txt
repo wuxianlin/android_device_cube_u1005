@@ -1,0 +1,66 @@
+wuxianlin@ubuntu:~/android/lineage-15.1/device/cube/u1005$ adb shell ls -l /dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name
+total 0
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 boot -> /dev/block/mmcblk0p8 65536x1024=67108864
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 cache -> /dev/block/mmcblk0p26 409600x1024=419430400
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 dkb -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 expdb -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 frp -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 kb -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 keystore -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 lk -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 lk2 -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 logo -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 metadata -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 nvdata -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 nvram -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 odmdtbo -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 oemkeystore -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 para -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 23 2010-01-01 08:00 preloader_a -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root 23 2010-01-01 08:00 preloader_b -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 proinfo -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 protect1 -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 protect2 -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 20 2010-01-01 08:00 recovery -> /dev/block/mmcblk0p9 65536x1024=67108864
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 seccfg -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 secro -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 system -> /dev/block/mmcblk0p24 2723840x1024=2789212160
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 tee1 -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 tee2 -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 userdata -> /dev/block/mmcblk0p27 118233583x1024=121071188992
+lrwxrwxrwx 1 root root 21 2010-01-01 08:00 vendor -> /dev/block/mmcblk0p25 475136x1024=486539264
+wuxianlin@ubuntu:~/android/lineage-15.1/device/cube/u1005$ adb shell cat /proc/partitions
+major minor  #blocks  name
+
+ 179        0  122138624 mmcblk0
+ 179        1       3072 mmcblk0p1
+ 179        2       5120 mmcblk0p2
+ 179        3      10240 mmcblk0p3
+ 179        4      10240 mmcblk0p4
+ 179        5       1024 mmcblk0p5
+ 179        6       1024 mmcblk0p6
+ 179        7        512 mmcblk0p7
+ 179        8      65536 mmcblk0p8
+ 179        9      65536 mmcblk0p9
+ 179       10       8192 mmcblk0p10
+ 179       11      16384 mmcblk0p11
+ 179       12      10240 mmcblk0p12
+ 179       13        512 mmcblk0p13
+ 179       14       2048 mmcblk0p14
+ 179       15       6144 mmcblk0p15
+ 179       16       8192 mmcblk0p16
+ 179       17       5120 mmcblk0p17
+ 179       18       5120 mmcblk0p18
+ 179       19       1024 mmcblk0p19
+ 179       20      32768 mmcblk0p20
+ 179       21      35840 mmcblk0p21
+ 179       22       1024 mmcblk0p22
+ 179       23       1024 mmcblk0p23
+ 179       24    2723840 mmcblk0p24
+ 179       25     475136 mmcblk0p25
+ 179       26     409600 mmcblk0p26
+ 179       27  118233583 mmcblk0p27
+ 179       96      16384 mmcblk0rpmb
+ 179       64       4096 mmcblk0boot1
+ 179       32       4096 mmcblk0boot0
+ 253        0  118233583 dm-0

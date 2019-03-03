@@ -1,0 +1,65 @@
+#
+# system.prop for CUBE U1005
+#
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=196610
+ro.hardware.gralloc=mt8173.img
+wifi.direct.interface=p2p0
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+ro.zygote.preload.enable=0
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+ro.kernel.zio=38,108,105,16
+
+ro.sf.lcd_density=320
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_response_time=1
+# factory mode config
+sys.mtk.no.factoryimage=1
+# disable ipo for development
+sys.ipo.disable=1
+#wfd sink
+ro.mtk_wfd_support=1
+ro.mtk_wfd_sink_support=1
+ro.mtk_wfd_sink_uibc_support=1
+ro.operator.optr=CUST
+ro.mtk_alps_box_support=0
+ro.mtk_hdmi_4k_support=1
+
+ro.product.board=tb8176p1_64_bsp

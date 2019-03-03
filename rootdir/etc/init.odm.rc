@@ -1,0 +1,4 @@
+# rc script for inserting kernel module
+
+on fs
+# insmod /system/lib/modules/*.ko
